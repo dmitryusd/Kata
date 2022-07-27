@@ -17,14 +17,14 @@ public class Main {
         mapArabToRoman.put(1, "I");
     }
 
-    public static void main(String[] args) {
-        String calcInput = new Scanner(System.in).nextLine();
-        try {
-            System.out.println(calc(calcInput));
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
+//    public static void main(String[] args) {
+//        String calcInput = new Scanner(System.in).nextLine();
+//        try {
+//            System.out.println(calc(calcInput));
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
+//    }
 
     public static String calc(String input) throws Exception{
         Operation operation = getOperation(input).orElseThrow(IllegalArgumentException::new);
